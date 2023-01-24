@@ -4,14 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <title>esercizio metodi classi</title>
   </head>
 
   <body>
-    <div id="carousel"></div>
-    <button onclick="currentPage--; showPage(currentPage);">Previous</button>
-    <button onclick="currentPage++; showPage(currentPage);">Next</button>
+    <main>
+      <div id="carousel"></div>
+      <div id="buttons">
+        <button onclick="previousPage()">Previous</button>
 
-    <script src="script.js"></script>
+        <div id="numeroPagina"></div>
+        <button onclick="nextPage() ">Next</button>
+      </div>
+
+      <script src="script.js"></script>
+    </main>
   </body>
 </html>

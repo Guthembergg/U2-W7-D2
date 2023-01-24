@@ -1,0 +1,25 @@
+#buttons {
+  display: flex;
+}
+#numeroPagina {
+  width: 30px;
+  text-align: center;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  margin: 5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 15%;
+}
+#carousel {
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+}

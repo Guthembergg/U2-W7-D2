@@ -51,7 +51,7 @@ let items = [
   "item10",
   "item11",
 ];
-let page = new Page(items, 4);
+let page = new Page(items, 2);
 let currentPage = 1;
 
 function showPage(pageNumber) {
@@ -68,6 +68,24 @@ function showPage(pageNumber) {
     itemElement.innerHTML = element;
     carousel.appendChild(itemElement);
   });
+  let nP = document.getElementById("numeroPagina");
+  nP.innerHTML = currentPage;
+}
+
+function nextPage() {
+  currentPage += 1;
+  showPage(currentPage);
+  if (currentPage > page.pages.length) {
+    currentPage = page.pages.length;
+  }
+}
+
+function previousPage() {
+  currentPage -= 1;
+  showPage(currentPage);
+  if (currentPage < 1) {
+    currentPage = 1;
+  }
 }
 
 showPage(currentPage);
